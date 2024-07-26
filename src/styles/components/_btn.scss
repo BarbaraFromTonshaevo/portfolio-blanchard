@@ -1,0 +1,75 @@
+@use '../utils/mixin' as m;
+
+.btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	transition: color var(--st), background-color var(--st),
+		border-color var(--st);
+
+	&--prim,
+	&--sec {
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -7px;
+			left: -7px;
+			right: -7px;
+			bottom: -7px;
+			border: 2px solid transparent;
+			border-radius: 100px;
+			transition: border-color var(--st);
+		}
+	}
+	&--prim {
+		height: 70px;
+		padding: 0 35px;
+		background-color: var(--accent);
+		border: 3px solid var(--accent);
+		color: var(--white);
+		border-radius: 100px;
+		&:focus {
+			&::before {
+				border-color: var(--accent-lightest);
+			}
+		}
+		&:active {
+			border-color: var(--accent-lightest);
+			background-color: var(--accent-dark);
+		}
+	}
+
+	&--sec {
+		height: 59px;
+		padding: 0 35px;
+		border-radius: 100px;
+		background-color: transparent;
+		border: 2px solid var(--accent);
+		color: var(--white);
+		&:focus {
+			&::before {
+				border-color: var(--accent-light);
+			}
+		}
+		&:active {
+			border-color: var(--accent-lightest);
+			background-color: var(--accent-dark);
+		}
+	}
+
+	@include m.hover {
+		&--prim:hover {
+			border-color: var(--accent-lightest);
+		}
+
+		&--sec:hover {
+			border-color: var(--accent-light);
+			background-color: var(--accent-light);
+		}
+	}
+}
