@@ -9,3 +9,6 @@ npm run preview - сбилдит проект и в терминал выкин�
 при изменении конфига, не нужно самому перезапускать сборку. вит сам ее перезагружает
 
 # portfolio-blanchard
+
+[Макет сайта](https://www.figma.com/design/tj7JfWXXpd5poySBgaW1nL/Blanchard-(new)?node-id=0-1&t=NMZpoK9t7k01QFEP-0)
+[Техническое задание](https://drive.google.com/file/d/1xOr6isvz-QP7X-V0jWcYEJwqCU2FNojU/view?usp=sharing)
