@@ -70,7 +70,9 @@ button{
 
 .container {
 	width: 100%;
-	padding: 0 30px;
+	max-width: calc(1600px + 50px*2);
+	padding: 0 50px;
+	margin: 0 auto;
 }
 
 .img {

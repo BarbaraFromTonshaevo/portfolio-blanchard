@@ -9,12 +9,15 @@
 	</head>
 
 	<body>
-		<main style="padding: 20px; background: #cacaca">
-			{{> common/header }}
-			<button class="btn btn--prim">Подписаться на рассылку</button>
-      <div  style="height: 50px"></div>
-			<button class="btn btn--sec">Заказать</button>
+		{{> common/header }}
+
+		<main>
+			{{> common/hero }} {{> common/about }} {{> common/gallery }} {{>
+			common/catalog }} {{> common/events }} {{> common/projects }}
 		</main>
+
+		{{> common/footer }}
+
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

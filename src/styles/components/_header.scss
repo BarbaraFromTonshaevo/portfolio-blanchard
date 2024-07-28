@@ -1,0 +1,20 @@
+.header{
+    position: fixed;
+    z-index: 2;
+    background-color: var(--black);
+    color: var(--white);
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    &__nav-list{
+        display: flex;
+        align-items: center;
+        gap: 90px;
+    }
+    &__nav-link{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
