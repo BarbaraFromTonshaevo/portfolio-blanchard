@@ -1,0 +1,8 @@
+.gallery{
+    background-image: url(/images/gallery-bg.jpg);
+    padding: 80px 0;
+    color: var(--white);
+    &__title{
+        color: var(--white);
+    }
+}
