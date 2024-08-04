@@ -1,0 +1,39 @@
+.catalog{
+    padding-top: 80px;
+    &__descr{
+        max-width: 1080px;
+        margin-bottom: 50px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 46% 1fr;
+        grid-gap: 50px;
+    }
+    &__item-img{
+        aspect-ratio: 750/470;
+        display: flex;
+    }
+    &__item-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__item-name{
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    &__item-period{
+        font-size: 12px;
+        color: var(--grey);
+        margin-bottom: 15px;
+    }
+    &__item-descr{
+        line-height: 2;
+    }
+}

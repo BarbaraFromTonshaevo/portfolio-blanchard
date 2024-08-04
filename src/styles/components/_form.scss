@@ -1,0 +1,35 @@
+.checkbox{
+    &__wrap{
+        --basic-color: var(--white);
+        --hover-color: var(--accent);
+    }
+    &__input{
+        display: none;
+    }
+    &__label{
+        position: relative;
+        color: var(--basic-color);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &::before{
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--basic-color);
+            transition: border-color var(--st);
+        }
+        &::after{
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 4px;
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: var(--hover-color);
+        }
+    }
+}

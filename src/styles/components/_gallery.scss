@@ -1,8 +1,29 @@
-.gallery{
-    background-image: url(/images/gallery-bg.jpg);
-    padding: 80px 0;
-    color: var(--white);
-    &__title{
-        color: var(--white);
-    }
+.gallery {
+	background-image: url(/images/gallery-bg.jpg);
+	padding: 80px 0;
+	color: var(--white);
+	&__title {
+		color: var(--white);
+	}
+	&__container {
+		display: flex;
+		gap: 30px;
+	}
+	&__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+		height: auto;
+		width: calc(100% - 70% - 30px);
+	}
+	&__checkboxes {
+		margin-top: auto;
+	}
+	&__right {
+		width: 71%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 50px;
+	}
 }
