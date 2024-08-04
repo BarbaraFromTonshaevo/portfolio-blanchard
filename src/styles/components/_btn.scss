@@ -63,6 +63,24 @@
 		}
 	}
 
+	&--tert {
+		height: 59px;
+		padding: 0 35px;
+		border-radius: 100px;
+		background-color: transparent;
+		border: 2px solid var(--accent);
+		color: var(--accent);
+		&:focus {
+			&::before {
+				border-color: var(--accent-light);
+			}
+		}
+		&:active {
+			border-color: var(--accent-lightest);
+			background-color: var(--accent-dark);
+		}
+	}
+
 	@include m.hover {
 		&--prim:hover {
 			border-color: var(--accent-lightest);
@@ -71,6 +89,12 @@
 		&--sec:hover {
 			border-color: var(--accent-light);
 			background-color: var(--accent-light);
+		}
+
+		&--tert:hover {
+			border-color: var(--accent-light);
+			background-color: var(--accent-light);
+			color: var(--white);
 		}
 	}
 }
