@@ -1,0 +1,20 @@
+@use '/src/styles/utils/reset';
+
+@use 'swiper/css';
+
+@use '/src/styles/utils/mixin';
+@use '/src/styles/utils/fonts';
+@use '/src/styles/utils/variables';
+@use '/src/styles/utils/common';
+
+@use '/src/styles/components/btn';
+@use '/src/styles/components/form';
+@use '/src/styles/components/header';
+@use '/src/styles/components/footer';
+@use '/src/styles/components/hero';
+@use '/src/styles/components/about';
+@use '/src/styles/components/gallery';
+@use '/src/styles/components/catalog';
+@use '/src/styles/components/events';
+@use '/src/styles/components/projects';
+
